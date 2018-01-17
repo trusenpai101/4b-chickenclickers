@@ -6,13 +6,21 @@
 <!--Stylesheet-->
 <link rel="stylesheet" type="text/css" href="webapp.css">
 <!--JavaScript-->
-<script type="text/javascript" src="webapp.js"></script>
+<script type="text/javascript">
+var score= 0;
+function chicken_clicker() {
+	score = score + 1;
+	document.getElementById("score").value = score
+}</script>
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
 <!--Add your HTML here-->
+<h2>Chicken Clicker</h2>
+<button onclick="chicken_clicker();"><img src="images/chicken.png"></button> <br>
+<input id="score" type="text" value="0">
 
 
 
