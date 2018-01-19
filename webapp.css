@@ -18,10 +18,10 @@ body {
 }
 
 #leftColumn	 {
+	background-color: white;
+	height: 500px;
 	float: left;
-	width: 300px;
 }
-
 #rightColumn {
 	float: right;
 	width: 600px;
