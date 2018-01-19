@@ -16,21 +16,21 @@ function buy_chick() {
 
 var cartons = 0;
 
-function buy_carton() {
+function carton() {
 	cartons++;
 	document.getElementById("chicks").value = chicks;
 }
 
 var farms = 0;
 
-function buy_farm() {
+function farm() {
 	farms++;
 	document.getElementById("farms").value = farms;
 }
 
 var eggtopia = 0;
 
-function buy_eggtopia() {
+function eggtopia() {
 	eggtopia++;
 	document.getElementById("eggtopia").value = eggtopia;
 }
