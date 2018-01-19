@@ -4,3 +4,24 @@
 body {
     background-image: url("images/barn.jpg");
 }
+
+/*-------------------------------------------------
+
+	BASIC STRUCTURE
+
+-------------------------------------------------*/
+
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin:20px auto;
+}
+
+#leftColumn	 {
+	float: left;
+	width: 300px;
+}
+
+#rightColumn {
+	float: right;
+	width: 600px;
