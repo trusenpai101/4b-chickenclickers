@@ -23,5 +23,6 @@ body {
 	float: left;
 }
 #rightColumn {
+	background-color: white;
 	float: right;
 	width: 400px;
