@@ -5,6 +5,13 @@ var eggs = 0;
 var chicks = 0;
 var cartons = 0;
 var farms = 0;
+var eggtopia = 0;
+var universee = 0;
+
+function chicken_clicker() {
+	eggs++;
+	update_values();
+}
 
 // buy("chicks");
 function buy(sel) {
@@ -16,62 +23,41 @@ function buy(sel) {
 			}
 			break;
 		case "cartons":
-			if(eggs >= 10) {
-				eggs-=10;
+			if(eggs >= 100) {
+				eggs-=100;
 				cartons++;
+			}
 			break;
 		case "farms":
-			if(eggs >= 10) {
-				eggs-=10;
+			if(eggs >= 1000) {
+				eggs-=1000;
 				farms++;
+			}
 			break;
 		case "eggtopia":
-			if(eggs >= 10) {
-				eggs-=10;
+			if(eggs >= 100000) {
+				eggs-=100000;
 				eggtopia++;
+			}
 			break;
 		case "universee":
-			if(eggs >= 10) {
-				eggs-=10;
+			if(eggs >= 100000000) {
+				eggs-=100000000;
 				universee++;
+			}
 			break;
 	}
+	update_values();
 }
 
-
-function chicken_clicker() {
-	eggs++;
-	document.getElementById("eggs").value = eggs;
-}
-
-
-function buy_chick() {
-	chicks++;
-	document.getElementById("chicks").value = chicks;
-}
-
-
-function buy_carton() {
-	cartons++;
-	document.getElementById("cartons").value = cartons;
-}
-
-
-function buy_farms() {
-	farms++;
-	document.getElementById("farms").value = farms;
-}
-
-var eggtopia = 0;
-
-function buy_eggtopia() {
-	eggtopia++;
-	document.getElementById("eggtopia").value = eggtopia;
-}
+function update_values() {
+	document.getElementById("eggs").value= eggs;
+	document.getElementById("chicks").value= chicks;
+	document.getElementById("cartons").value= cartons;
+	document.getElementById("farms").value= farms;
+	document.getElementById("eggtopia").value= eggtopia;
+	document.getElementById("universee").value= universee;
 	
-var universee = 0;
-
-function buy_universe() {
-	universee++;
-	document.getElementById("universee").value = universee;
+	
+	
 }
