@@ -16,28 +16,28 @@ function buy_chick() {
 
 var cartons = 0;
 
-function carton() {
+function buy_carton() {
 	cartons++;
-	document.getElementById("chicks").value = chicks;
+	document.getElementById("cartons").value = cartons;
 }
 
 var farms = 0;
 
-function farm() {
+function buy_farm() {
 	farms++;
 	document.getElementById("farms").value = farms;
 }
 
 var eggtopia = 0;
 
-function eggtopia() {
+function buy_eggtopia() {
 	eggtopia++;
 	document.getElementById("eggtopia").value = eggtopia;
 }
 	
-var chicken_universe = 0;
+var universe = 0;
 
-function chicken_universe() {
-	farms++;
-	document.getElementById("chicken_universe").value = chicken_universe;
+function buy_universe() {
+	universe++;
+	document.getElementById("universe").value = chicken_universe;
 }
