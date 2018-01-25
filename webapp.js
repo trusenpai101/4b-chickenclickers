@@ -64,10 +64,10 @@ function update_values() {
 
 setInterval(bonus, 1000);
 function bonus() {
-	eggs+=chicks*0.5;
-	eggs+=cartons*1;
+	eggs+=chicks*1;
+	eggs+=cartons*3;
 	eggs+=farms*5;
-	eggs+=eggtopia*20;
-	eggs+=universee*500;
+	eggs+=eggtopia*10;
+	eggs+=universee*100;
 	update_values();
 }
