@@ -71,3 +71,8 @@ function bonus() {
 	eggs+=universee*100;
 	update_values();
 }
+
+setInterval(gold, 1000000000)
+function gold() {
+
+}
