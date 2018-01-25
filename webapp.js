@@ -61,3 +61,13 @@ function update_values() {
 	
 	
 }
+
+setInterval(bonus, 1000);
+function bonus() {
+	eggs+=chicks*1;
+	eggs+=cartons*3;
+	eggs+=farms*10;
+	eggs+=eggtopia*50;
+	eggs+=universee*1000;
+	update_values();
+}
