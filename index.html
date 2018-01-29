@@ -8,7 +8,11 @@
 <!--JavaScript-->
 <script type="text/javascript" src="webapp.js"></script>
 <!--jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});</script>
 </head>
  
 <body>
@@ -27,7 +31,7 @@
 			<br>
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cartons: <input id="cartons" type="text" value="0"></p>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100: <button onclick="buy('cartons');">Buy</button>
-			<br>
+			<br>r
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trucks: <input id="trucks" type="text" value="0"></p>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 500: <button onclick="buy('trucks');">Buy</button>
 			<br>
