@@ -51,8 +51,9 @@ function buy(sel) {
 			if(eggs >= 100000000) {
 				eggs-=100000000;
 				universee++;
+				break;
 			}
-	
+			}
 	update_values();
 }
 
@@ -64,9 +65,6 @@ function update_values() {
 	document.getElementById("farms").value= farms;
 	document.getElementById("eggtopia").value= eggtopia;
 	document.getElementById("universee").value= universee;
-
-	
-	
 }
 
 setInterval(bonus, 1000);
@@ -80,7 +78,7 @@ function bonus() {
 	update_values();
 }
 
-setInterval(gold, 1000000000)
+setInterval(gold, 1000000000);
 function gold() {
 	
 
