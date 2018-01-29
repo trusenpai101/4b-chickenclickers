@@ -70,16 +70,15 @@ function update_values() {
 setInterval(bonus, 1000);
 function bonus() {
 	eggs+=chicks*1;
-	eggs+=cartons*3;
-	eggs+=trucks*5;
-	eggs+=farms*8;
-	eggs+=eggtopia*10;
+	eggs+=cartons*2;
+	eggs+=trucks*3;
+	eggs+=farms*5;
+	eggs+=eggtopia*8;
 	eggs+=universee*100;
 	update_values();
 }
 
 setInterval(gold, 1000000000);
 function gold() {
-	
-
+	eggs+=500;
 }
