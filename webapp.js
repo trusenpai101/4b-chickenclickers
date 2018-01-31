@@ -91,7 +91,18 @@ function save() {
     document.cookie = "eggs=";
 }
 
+function clear(){
+	var eggs = 0;
+	var chicks= 0;
+	var cartons = 0;
+	var truck = 0;
+	var farm = 0;
+	var eggtopia = 0;
+	var universee = 0;
+}
 
+function loaded() {
+}
 function changeCSS(cssFile, cssLinkIndex) {
 
     var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
