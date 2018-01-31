@@ -9,6 +9,14 @@ body {
 	font-family:'Gloria Hallelujah', cursive;
 }
 
+
+/* <input type="button" class="button number" value="go to earth" onclick="changeCSS('webapp.css.css',0)">
+	<input type="button" class="button operator" value="go to mars" onclick="changeCSS('alien.css',0)"> /* 
+
+
+
+
+
 /*<h2 id="shopName" onclick="random_name();">Click here to name your brownie shop!</h2>*/
 
 
