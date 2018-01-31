@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+body {
+    background-image: url("images/barn.jpg");
+	background-size: cover;
+	font-family:'Gloria Hallelujah', cursive;
+}
+
+/*<h2 id="shopName" onclick="random_name();">Click here to name your brownie shop!</h2>*/
+
+
+/*-------------------------------------------------
+
+	BASIC STRUCTURE
+
+-------------------------------------------------*/
+
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin:20px auto;
+}
+
+#leftColumn	 {
+	background-color: white;
+	height: 520px;
+	float: left;
+	border-radius: 15px;
+}
+#rightColumn {
+	background-color: white;
+	float: right;
+	width: 400px;
+	border-radius: 15px;
+}
