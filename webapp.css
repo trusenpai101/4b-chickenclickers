@@ -14,7 +14,17 @@ body {
 	<input type="button" class="button operator" value="go to mars" onclick="changeCSS('alien.css',0)"> /* 
 
 
+function changeCSS(cssFile, cssLinkIndex) {
 
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
 
 
 /*<h2 id="shopName" onclick="random_name();">Click here to name your brownie shop!</h2>*/
