@@ -83,12 +83,19 @@ function gold() {
 	eggs+=500;
 }
 
-function save() {
+function save_game() {
 	var exdays = 120;
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = "eggs=";
+	var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+	document.cookie = "eggs=" + eggs + ";" + expires; // "eggs=10"
+	document.cookie = "chicks="+ chicks + ";" + expires;
+	document.cookie = "cartons="+ cartons + ";" + expires;
+	document.cookie = "trucks="+ trucks + ";" + expires;
+	document.cookie = "farms="+ farms + ";" + expires;
+	document.cookie = "eggtopia="+ eggtopia + ";" + expires;
+	document.cookie = "universee="+ universee + ";" + expires;
+	
 }
 
 function clear(){
@@ -99,9 +106,10 @@ function clear(){
 	var farm = 0;
 	var eggtopia = 0;
 	var universee = 0;
+	update_values;
 }
 
-function loaded() {
+function load_game() {
 }
 function changeCSS(cssFile, cssLinkIndex) {
 
@@ -113,4 +121,10 @@ function changeCSS(cssFile, cssLinkIndex) {
     newlink.setAttribute("href", cssFile);
 
     document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
+
+function random_name();{
+	prompt("Name your company!");
+document.write = random_name();
+
 }
