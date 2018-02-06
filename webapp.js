@@ -106,7 +106,6 @@ function clear(){
 	var farm = 0;
 	var eggtopia = 0;
 	var universee = 0;
-	update_values;
 }
 
 function load_game() {
@@ -123,8 +122,3 @@ function changeCSS(cssFile, cssLinkIndex) {
     document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 }
 
-function random_name();{
-	prompt("Name your company!");
-document.write = random_name();
-
-}
