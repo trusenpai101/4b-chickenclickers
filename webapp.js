@@ -58,7 +58,7 @@ function buy(sel) {
 }
 
 function update_values() {
-	document.getElementById("eggs").value= eggs;
+	document.getElementById("eggs").value= Math.floor(eggs);
 	document.getElementById("chicks").value= chicks;
 	document.getElementById("cartons").value= cartons;
 	document.getElementById("trucks").value= trucks;
@@ -67,14 +67,14 @@ function update_values() {
 	document.getElementById("universee").value= universee;
 }
 
-setInterval(bonus, 1000);
+setInterval(bonus, 100);
 function bonus() {
-	eggs+=chicks*1;
-	eggs+=cartons*2;
-	eggs+=trucks*3;
-	eggs+=farms*5;
-	eggs+=eggtopia*8;
-	eggs+=universee*100;
+	eggs+=chicks*0.05;
+	eggs+=cartons*0.1;
+	eggs+=trucks*0.3;
+	eggs+=farms*0.5;
+	eggs+=eggtopia*0.8;
+	eggs+=universee*10;
 	update_values();
 }
 
