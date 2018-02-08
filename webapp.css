@@ -2,7 +2,7 @@
 /* CSS Document */
 
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-
+/* texts */
 body {
     background-image: url("images/barn.jpg");
 	background-size: cover;
@@ -13,10 +13,6 @@ body {
 
 
 /*-------------------------------------------------
-
-var name = prompt("Hi there! What do you want to name you egg company?");
-	var valid=confirm("is " +name+ " correct?")
-	document.write("+ email +");
 
 	BASIC STRUCTURE
 
