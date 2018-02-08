@@ -14,6 +14,10 @@ body {
 
 /*-------------------------------------------------
 
+var name = prompt("Hi there! What do you want to name you egg company?");
+	var valid=confirm("is " +name+ " correct?")
+	document.write("+ email +");
+
 	BASIC STRUCTURE
 
 -------------------------------------------------*/
@@ -59,7 +63,7 @@ body {
 
 @media screen and (max-width: 700px) {
 	#leftColumn, #rightColumn {
-		width: auto;
+		width: 30%;
 		float: none;
 	}
 }
