@@ -44,7 +44,20 @@ body {
 	background-color: white;
 	float: right;
 	width: 400px;
+	height: 850px;
 	border-radius: 15px;
+}
+
+#footer {
+	background-color: white;
+	height: 50px;
+	border-radius: 15px;
+	clear: both;
+	float: left;
+}
+
+#footer p {
+	text-align:right;
 }
 
 /* responsive widths*/
