@@ -54,11 +54,14 @@ body {
 	border-radius: 15px;
 	clear: both;
 	float: left;
+	width: 390px;
 }
 
 #footer p {
 	text-align:right;
 }
+
+
 
 /* responsive widths*/
 
