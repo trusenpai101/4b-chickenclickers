@@ -17,12 +17,6 @@ body {
 	BASIC STRUCTURE
 
 -------------------------------------------------*/
-#title {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	font-size: 30px;
-	text-align: center;
-}
 
 #leftColumn img {
 	width: 100%;
@@ -35,7 +29,7 @@ body {
 }
 
 #leftColumn	 {
-	background-color: white;
+	background-image: url("images/sky.png");
 	height: 650px;
 	float: left;
 	border-radius: 15px;
