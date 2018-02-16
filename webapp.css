@@ -29,7 +29,9 @@ body {
 }
 
 #leftColumn	 {
-	background-image: url("images/sky.png");
+	background-image: url("images/eggs.png");
+	background-size: 100%;
+	background-repeat:no-repeat;
 	height: 650px;
 	float: left;
 	border-radius: 15px;
