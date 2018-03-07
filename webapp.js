@@ -59,8 +59,8 @@ function buy(sel) {
 			}
 			break;
 		case "universee":
-			if(eggs >= 100000000) {
-				eggs-=100000000;
+			if(eggs >= 1) {
+				eggs-=1;
 				universee++;
 				break;
 			}
@@ -155,4 +155,9 @@ function load_cookies() {
     farms = Number(get_cookie("farms"));
     eggtopia = Number(get_cookie("eggtopia"));
     universee = Number(get_cookie("universee"));
+}
+
+//clear button
+function clear() {
+    document.getElementById("clear").reset();
 }

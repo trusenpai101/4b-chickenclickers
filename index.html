@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+x<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -19,9 +19,11 @@
 		<div id="leftColumn">
 		<h1>Chicken Clicker</h1>
 		<h4> Made By: Emma Balog, Alicia Shi, and Neiko Lopez</h4>
-		<img src="images/chicken.png" onclick="chicken_clicker();">
+		<img src="images/chicken.png" onclick="chicken_clicker();" draggable="false">
 		<br>
-		<button onclick="clear">Clear</button>
+		<form id="clear">
+		<button onclick="clear()">Clear</button>
+		</form>
 		<input type="button" class="button number" value="go to earth" onclick="changeCSS('webapp.css',0)">
 	<input type="button" class="button operator" value="go to mars" onclick="changeCSS('alien.css',0)">
 	<br>
@@ -30,22 +32,22 @@
 	<div id="rightColumn">
 		<br>
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chicks: <input id="chicks" type="text" value="0"></p>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 Eggs: <button onclick="buy('chicks');"><img src="images/chick.png"></button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 Eggs: <button onclick="buy('chicks');"><img src="images/chick.png" draggable="false"></button>
 			<br>
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cartons: <input id="cartons" type="text" value="0"></p>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100 Eggs: <button onclick="buy('cartons');"><img src="images/carton.png"></button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100 Eggs: <button onclick="buy('cartons');"><img src="images/cartSSon.png" draggable="false"></button>
 			<br>
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trucks: <input id="trucks" type="text" value="0"></p>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 500 Eggs: <button onclick="buy('trucks');"><img src="images/truck.png"></button>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 500 Eggs: <button onclick="buy('trucks');"><img src="images/truck.png" draggable="false"></button>
 			<br>
 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Farms: <input id="farms" type="text" value="0"></p>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,000 Eggs:<button onclick="buy('farms');"><img src="images/farrms.png"></button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,000 Eggs:<button onclick="buy('farms');"><img src="images/farrms.png" draggable="false"></button>
 			<br>
 		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eggtopia: <input id="eggtopia" type="text" value="0"></p>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100,000 Eggs:<button onclick="buy('eggtopia');"><img src="images/EARTH.png"></button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100,000 Eggs:<button onclick="buy('eggtopia');"><img src="images/EARTH.png" draggable="false"></button>
 			<br>
 		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chicken Universe <input id="universee" type="text" value="0"></p>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100,000,000 Eggs:<button onclick="buy('universee');"><img src="images/portal.png"></button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100,000,000 Eggs:<button onclick="buy('universee');"><img src="images/portal.png" draggable="false"></button>
 			<audio autoplay loop>
 				<source src="mii.mp3" type="audio/mpeg">
 			</audio>
@@ -53,7 +55,7 @@
 			<br>
 	</div>
 </div>
-
+</div>
 
 
 </body>
